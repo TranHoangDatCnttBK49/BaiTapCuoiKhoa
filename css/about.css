@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wt@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins,sans-serif';
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+.swiper {
+    width:950px;
+}
+ssection .card .image{
+    height: 140px;
+    width:  140px;
+    border-radius:50%;
+    padding: 3px;
+    background-color: #A0522D;
+}
+ssection .card .image img{
+    height:100%;
+    width:  100%;
+    object-fit: cover;
+    border-radius:50%;
+    padding: 3px;
+    border: 3px solid #fff;
+}
+body {
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#FFFBF2;
+}
+.card {
+    border-radius:20px;
+    background:#fff;
+    position: relative;
+    margin: 20px 0;
+    width: 280px;
+}
+.card::before{
+    content:"";
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background:#A0522D;
+    border-radius: 20px 20px 0px 0px;
+}
+.card .card-content {
+    padding:30px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+.card .media-icons{
+    position: absolute;
+    top:10px;
+    right:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card .media-icons i{
+    margin-top: 10px;
+    color: #fff;
+    transition: all 0.3s ease;
+    opacity:0.6;
+    cursor: pointer;
+}
+.card .media-icons:hover{
+    opacity: 1;
+}
+.card .name-profession{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: #333;
+}
+.name-profession  .name{
+    font-size:25px;
+    font-weight:600;
+}
+.name-profession  .profession{
+    font-size:15px;
+    font-weight:500;
+}
+.card .rating  {
+    display:flex;
+    align-items:center ;
+    margin-top:18px;
+}
+.card .rating i{
+    font-size:18px;
+    margin:0 2px;
+    color: #DEB887;
+}
+.card .button{
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    margin-top: 20px;
+
+}
+.card .button button {
+    background-color: #DEB887;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size:14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.button .button:hover{
+    background-color:#265DF2;
+}
